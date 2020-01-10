@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Frequency.associate = function(models) {
-    Frequency.belongsTo(models.Habit);
+    Frequency.hasOne(models.Habit);
   };
   return Frequency;
 };

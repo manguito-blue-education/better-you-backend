@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
   );
   Habit.associate = function(models) {
     Habit.belongsTo(models.User, { foreignKey: "userId" });
-    Habit.hasOne(models.Frequency, { foreignKey: "frequencyId" });
+    Habit.belongsTo(models.Frequency, { foreignKey: "frequencyId" });
   };
   return Habit;
 };
