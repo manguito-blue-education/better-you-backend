@@ -65,7 +65,7 @@ npx sequelize-cli db:migrate
     }
     ```
  
-5. Migrate the DB
+5. Migrate the DB (remember to first create the schema `better_you_development`)
    ```
     npx sequelize-cli db:migrate
    ```
